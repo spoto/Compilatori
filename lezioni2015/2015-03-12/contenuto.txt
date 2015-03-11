@@ -1,0 +1,18 @@
+- invocazione di metodo: invokevirtual/special/static
+- creazione di un oggetto, invocazione del costruttore
+- conversioni di tipo e cast
+
+- esercizio: scrivere un programma Java bytecode che stampa i caratteri
+  dalla A alla Z, su linee distinte. Nota: i caratteri, come i booleani, in
+  Java bytecode sono implementati tramite gli interi (il loro Unicode).
+  - versione 1: usando solo l'operand stack
+  - versione 2: usando variabili locali
+  - versione 3: usando un campo statico
+
+- esercizio: scrivere un programma Java bytecode con un metodo che
+  calcola la funzione 91 di McCarthy:
+
+  http://it.wikipedia.org/wiki/Funzione_91_di_McCarthy
+
+  Si faccia chiamare quel metodo a un main, con parametro da -100 a 200,
+  stampando ogni volta il risultato.

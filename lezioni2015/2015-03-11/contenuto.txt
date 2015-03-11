@@ -1,0 +1,6 @@
+- introduzione al corso
+- struttura e fasi di un compilatore
+- Java bytecode
+- l'assemblatore Jasmin
+- esempi di programmi Java bytecode
+- operand stack, variabili locali, campi statici
