@@ -1,0 +1,25 @@
+Un albero binario di interi può venire rappresentato da due tipi
+di nodi: nodi foglia, che contengono un valore intero; e nodi interni,
+che contengono due sottoalberi. Entrambi questi due tipi di nodo possono
+essere visti come sottoclassi concrete di una classe astratta Node,
+che trovate già scritta in Node.j. Si noti che tale classe, benché astratta,
+ha comunque un costruttore, che serve per venire richiamato dalle sottoclassi.
+L'unico metodo che le sottoclassi dovranno implementare è toString, che
+viene lasciato astratto in Node.
+
+La classe Leaf ha un costruttore che riceve il valore intero della foglia,
+che salva nel suo stato. Il suo metodo toString restituisce la
+stringa ottenuta da tale valore. Si guardi Leaf.j, già scritto e completo.
+
+La classe Internal deve avere un costruttore che riceve i due sottoalberi,
+che salva nel suo stato. Il suo metodo toString restituisce la stringa
+ottenuta concatenando il toString dei sottoalberi (ricorsivamente),
+con in mezzo una virgola e agli estremi una parentesi quadra aperta (a sinistra)
+e poi chiusa (a destra).
+
+La classe Main deve avere un metodo main che costruisce un nodo interno
+con a sinistra un nodo foglia contenente 13 e a destra un nodo foglia
+contenente 17. Poi stampa tale nodo interno. Il risultato sul video dovrà
+essere [13,17]
+
+Si scrivano Internal.j e Main.j in jasmin.
