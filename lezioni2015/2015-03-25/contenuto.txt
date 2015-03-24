@@ -1,0 +1,5 @@
+- istallazione del codice del compilatore Kitten dentro Eclipse
+- esempi di programmi nel linguaggio Kitten
+- tipi, espressioni, comandi
+- tipaggio statico e dinamico
+- tipaggio debole e forte
