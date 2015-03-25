@@ -1,5 +1,3 @@
-- analisi lessicale
-- espressioni regolari
 - automi non deterministici, automi deterministici
 - equivalenza fra espressioni regolari e automi non dteemrinistici e deterministici
 - costruzione dell'analizzatore lessicale a partire dalla specifica dei token

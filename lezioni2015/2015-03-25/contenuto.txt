@@ -3,3 +3,7 @@
 - tipi, espressioni, comandi
 - tipaggio statico e dinamico
 - tipaggio debole e forte
+- analisi lessicale
+- espressioni regolari
+- specifica dei token tramite espressioni regolari
+- limiti delle espressioni regolari
