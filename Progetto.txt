@@ -1,0 +1,42 @@
+Il progetto di quest'anno consiste nella modifica del compilatore Kitten
+in modo da rendere possibile la scrittura di metodi di test all'interno
+delle classi e la loro esecuzione.
+
+Per esempio, deve diventare possibile scrivere dei test come segue all'interno
+delle classi:
+
+  test nome
+    comando
+
+All'interno di tale comando, deve essere possibile scrivere asserzioni del tipo
+
+  assert(espressione booleana)
+
+che verifica se l'espressione booleana è vera. Se essa è falsa, il test
+è da considerarsi fallito. Questo nuovo comando deve essere utilizzabile solo
+dentro ai test, non dentro ai normali metodi o costruttori.
+
+La compilazione di una classe Kitten C con almeno un test deve generare
+CTest.class oltre alla normale C.class. La classe Java bytecode CTest.class
+deve includere un main che, per ogni test, crea un'istanza di C (usando il
+costruttore senza argimenti di C) ed esegue il test su tale istanza
+(legata a this dentro il test). L'esecuzione di questo metodo main deve
+stampare una tabella del tipo:
+
+Test execution for class C:
+  - nome: passed [1.27ms]
+  - nome: passed [0.08ms]
+  - nome: failed [0.19ms] at 8::5
+  - nome: passed [3.45ms]
+
+3 tests passed, 1 failed [5.39ms]
+
+L'esecuzione di ciascun test avviene normalmente su un'istanza ottenuta
+col costruttore senza argomenti di C. E' però possibile specificare delle
+"fixture" del tipo:
+
+  fixture
+    comando
+
+che vengono eseguite (in un ordine arbitrario) dopo avere costruito l'oggetto con il costruttore
+senza argomenti, subito prima di eseguire ciascun test.
