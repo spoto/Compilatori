@@ -1,0 +1,4 @@
+- Grammatiche libere dal contesto
+- Generazione dell'analizzatore sintattico di Kitten
+- Grammatica per il linguaggio Kitten
+- Il parsing LL: insiemi nullable, first e follow

@@ -1,0 +1,45 @@
+class Scramble {
+  field int[] array
+  field int length
+
+  constructor(int[] array, int length) {
+    this.array := array;
+    this.length := length
+  }
+
+  method void main() {
+    int[] arr := new int[5];
+    arr[0] := 3;
+    arr[1] := -5;
+    arr[2] := 4;
+    arr[3] := 21;
+    arr[4] := 18;
+    
+    Scramble p := new Scramble(arr, 5);
+    p.scramble("", new boolean[p.length])
+  }
+
+  method void scramble(String choice, boolean[] used) {
+    boolean found := false;
+    /* scegliamo un elemento e stampiamo tutte le permutazioni
+       che iniziano con quell'elemento */
+    for (int pos := 0; pos < this.length; pos := pos + 1)
+      if (!used[pos]) then {
+        found := true;
+        boolean[] newUsed := this.copy(used);
+        newUsed[pos] := true;
+        this.scramble(choice.concat(this.array[pos]).concat(" "), newUsed)
+      };
+    
+    if (!found)
+      then choice.concat("\n").output()
+  }
+
+  method boolean[] copy(boolean[] original) {
+    boolean[] result := new boolean[this.length];
+    for (int i := 0; i < this.length; i := i + 1)
+      result[i] := original[i];
+
+    return result
+  }
+}
