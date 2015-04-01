@@ -1,5 +1,5 @@
 - automi non deterministici, automi deterministici
-- equivalenza fra espressioni regolari e automi non dteemrinistici e deterministici
+- equivalenza fra espressioni regolari e automi non deterministici e deterministici
 - costruzione dell'analizzatore lessicale a partire dalla specifica dei token
 - il tool JLex
 

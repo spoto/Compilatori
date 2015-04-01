@@ -1,6 +1,4 @@
-- Il parsing LR(0)
-- Il parsing SLR
-
-In laboratorio:
-- definizione di token e regole di grammatica per la modifica del
-  compilatore Kitten che costituirà il progetto di quest'anno
+- Grammatiche libere dal contesto
+- Generazione dell'analizzatore sintattico di Kitten
+- Grammatica per il linguaggio Kitten
+- Il parsing LL(1): implementazione di una discesa ricorsiva sulla grammatica

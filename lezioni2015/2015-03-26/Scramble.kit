@@ -21,25 +21,19 @@ class Scramble {
 
   method void scramble(String choice, boolean[] used) {
     boolean found := false;
-    /* scegliamo un elemento e stampiamo tutte le permutazioni
-       che iniziano con quell'elemento */
+
     for (int pos := 0; pos < this.length; pos := pos + 1)
       if (!used[pos]) then {
-        found := true;
-        boolean[] newUsed := this.copy(used);
-        newUsed[pos] := true;
-        this.scramble(choice.concat(this.array[pos]).concat(" "), newUsed)
+        /* devo generare tutte le permutazioni che iniziano
+           con this.array[pos] */
+        used[pos] := true;
+        this.scramble(choice.concat(this.array[pos]).concat(" "), used);
+        used[pos] := false;
+        found := true
       };
-    
-    if (!found)
-      then choice.concat("\n").output()
-  }
 
-  method boolean[] copy(boolean[] original) {
-    boolean[] result := new boolean[this.length];
-    for (int i := 0; i < this.length; i := i + 1)
-      result[i] := original[i];
-
-    return result
+    if (!found) then
+      /* caso base: sono tutti gia' utilizzati */
+      choice.concat("\n").output()
   }
 }
