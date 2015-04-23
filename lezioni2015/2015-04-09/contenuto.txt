@@ -1,0 +1,5 @@
+- Il parsing LR(0)
+
+In laboratorio:
+- definizione di token e regole di grammatica per la modifica del
+  compilatore Kitten che costituirà il progetto di quest'anno

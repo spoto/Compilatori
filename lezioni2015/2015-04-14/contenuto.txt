@@ -1,0 +1,3 @@
+- Il parsing SLR
+- Il parsing LR(1)
+- Gerarchia delle classi di parsing
