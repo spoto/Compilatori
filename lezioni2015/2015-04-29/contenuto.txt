@@ -1,0 +1,7 @@
+Parsing LALR(1).
+Azioni semantiche JavaCup.
+Costruzione della sintassi astratta.
+Classi di sintassa astratta Kitten.
+Discesa ricorsiva sulla sintassi astratta.
+Calcolo delle variabili usate.
+Identificazione di statement irraggiungibili. 

@@ -1,0 +1,7 @@
+Analisi semantica.
+Classi per la rappresentazione dei tipi semantici.
+Analisi semantica di tipi, espressioni e comandi Kitten.
+Analisi semantica dei membri di classe.
+
+In laboratorio:
+Analisi semantica di test, fixture e comando assert.
