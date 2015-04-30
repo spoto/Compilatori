@@ -1,7 +1,12 @@
 Analisi semantica.
 Classi per la rappresentazione dei tipi semantici.
-Analisi semantica di tipi, espressioni e comandi Kitten.
-Analisi semantica dei membri di classe.
+Analisi semantica di tipi ed espressioni Kitten.
 
 In laboratorio:
-Analisi semantica di test, fixture e comando assert.
+- definizione della TestSignature e della FixtureSignature
+- loro creazione dentro addMembers chiamato nel costruttore di ClassType
+- aggiunta degli accessori
+
+  TestSignature testLookup(String name)   [i test non si ereditano!!!]
+  Set<FixtureSignature> fixturesLookup()  [le fixtures non si ereditano!!!]
+
