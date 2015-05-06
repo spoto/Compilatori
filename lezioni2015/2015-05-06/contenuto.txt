@@ -1,0 +1,3 @@
+- type-checking delle espressioni complesse di Kitten
+- type-checking dei comandi Kitten
+- type-checking di metodi e costruttori
