@@ -1,0 +1,5 @@
+Il bytecode Kitten
+Implementazione del bytecode Kitten
+
+In laboratorio:
+Implementazione del type-checking di Assert, fixture e test
