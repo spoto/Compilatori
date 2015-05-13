@@ -1,0 +1,3 @@
+Compilazione condizionale e passiva delle espressioni.
+Compilazione dei comandi.
+Compilazione di metodi e costruttori.
