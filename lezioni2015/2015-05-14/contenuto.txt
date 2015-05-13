@@ -1,4 +1,1 @@
-Generazione del codice Kitten per metodi e costruttori.
-
-In laboratorio:
-Inizio dell'implementazione del codice Kitten per metodi e costruttori.
+Traduzione del Kitten bytecode in Java bytecode.
