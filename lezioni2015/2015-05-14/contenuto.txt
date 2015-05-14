@@ -1,1 +1,3 @@
-Traduzione del Kitten bytecode in Java bytecode.
+Traduzione del Kitten bytecode sequenziale in Java bytecode.
+Struttura dei file class Java
+Utilizzo di base della libreria BCEL per la generazione dei bytecode Java.
