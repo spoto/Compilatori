@@ -1,0 +1,1 @@
+Linearizzazione del Kitten bytecode in una sequenza di Java bytecode.

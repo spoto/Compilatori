@@ -21,6 +21,12 @@ A questo punto tutti i test e fixture dovrebbero venire compilate in Kitten
 bytecode e le loro segnature aggiunte nell'insieme "done" che poi finisce
 dentro al Program, risultato della compilazione.
 
+Attenzione al metodo cleanUp() di Program.java: esso elimina tutte le
+segnature dal programma e le reinserisce a partire dal metodo main
+della classe di partenza. Occorre fare in modo che anche in questo
+caso vengano reinserite le segnature dei test e delle fixture delle
+classi raggiungibili.
+
 Rimane adesso da implementare la generazione del codice per il nuovo
 comando assert(exp). A tal fine, implementate il metodo di traduzione
 

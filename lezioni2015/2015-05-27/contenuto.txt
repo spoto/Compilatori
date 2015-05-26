@@ -1,0 +1,38 @@
+L'ultimo passo è adesso la definizione di un generatore di
+Java bytecode, che crei un file .class con un metodo main
+che esegue i test di ogni classe raggiungibile dalla compilazione.
+
+A tal fine, si crei una copia identica di
+javaBytecodeGenerator/JavaClassGenerator.java
+chiamata per esempio TestClassGenerator.java
+Il suo costruttore deve generare un CTest.class che:
+
+- per ogni fixture e per ogni test ha un metodo
+  private static void con un unico parametro di tipo CTest
+- ha un metodo public static void main(String[] args)
+  il cui codice esegue quanto segue: per ogni test
+
+  1) crea un oggetto O di tipo C
+  2) chiama tutte le fixture di C passando O come argomento
+  3) chiama il test passando O come argomento
+
+A questo punto, dentro Program.java, si crei un metodo
+generateJavaBytecodeForTests() che crea un TestClassGenerator
+per ogni classe che ha almeno un test (ci si ispiri al
+metodo generateJavaBytecode() ). La si faccia chiamare al
+Main.java
+
+Rimane da completare il progetto presentando i risultati
+dei test in una tabellina riepilogativa del tipo:
+
+Test execution for class C:
+  - nome: passed [1.27ms]
+  - nome: passed [0.08ms]
+  - nome: failed [0.19ms] at 8::5
+  - nome: passed [3.45ms]
+
+3 tests passed, 1 failed [5.39ms]
+
+Questo significa che il metodo main deve tenere traccia
+del tempo impiegato da ciascun test e in qualche modo
+essere informato di tutti gli assert che sono falliti nel test.
